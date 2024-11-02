@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap w/ Vite</title>
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <div class="d-flex z-3">
+      <aside id="sidebar" class="sidebar-toggle z-1 shadow">
+        <div class="sidebar-logo">
+          <a href="#"><i class="bi bi-bug-fill"></i>SIM-K</a>
+        </div>
+        <!-- sidebar navigation -->
+        <ul class="sidebar-nav p-0" id="my-list">
+          <li class="sidebar-item rounded actived" data-func="home">
+            <a href="#" class="sidebar-link">
+              <i class="bi bi-house-door"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="sidebar-header">Menu karyawan</li>
+
+          <li class="sidebar-item rounded" data-func="karyawan">
+            <div class="rounded">
+              <a href="#" class="sidebar-link">
+                <i class="bi bi-people-fill"></i>
+                <span>Karyawan</span>
+              </a>
+            </div>
+          </li>
+          <li class="sidebar-item rounded" data-func="jabatan">
+            <a href="#" class="sidebar-link">
+              <i class="bi bi-person-fill-up"></i>
+              <span>Jabatan</span>
+            </a>
+          </li>
+
+          <li class="sidebar-item rounded" data-func="divisi">
+            <a href="#" class="sidebar-link">
+              <i class="bi bi-person-fill-gear"></i>
+              <span>Divisi</span>
+            </a>
+          </li>
+
+          <li class="sidebar-header">Menu input data</li>
+          <li class="sidebar-item rounded" data-func="input">
+            <a href="#" class="sidebar-link">
+              <i class="bi bi-pencil"></i>
+              <span>Input data karyawan</span>
+            </a>
+          </li>
+
+          <li class="sidebar-header">Menu absensi</li>
+
+          <li class="sidebar-item rounded" data-func="absensi">
+            <a href="#" class="sidebar-link">
+              <i class="bi bi-calendar-check"></i>
+              <span>Absensi</span>
+            </a>
+          </li>
+          <li class="sidebar-item rounded" data-func="izin">
+            <a href="#" class="sidebar-link">
+              <i class="bi bi-calendar-x"></i>
+              <span>Izin</span>
+            </a>
+          </li>
+          <li class="sidebar-item rounded" data-func="lembur">
+            <a href="#" class="sidebar-link">
+              <i class="bi bi-calendar-plus"></i>
+              <span>Lembur</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- sidebar navigation end -->
+        <div class="sidebar-footer">
+          <a href="#" class="sidebar-link">
+            <i class="bi bi-box-arrow-in-left"></i>
+            <span>logout</span>
+          </a>
+        </div>
+      </aside>
+      <!-- end of sidebar -->
+
+      <!-- main section -->
+      <div class="main">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand shadow z-1">
+          <div class="container-fluid d-flex justify-content-between">
+            <button class="toggler-button" type="button">
+              <i class="bi bi-list"></i>
+            </button>
+
+            <span class="profile-picture">
+              <i class="bi bi-person-circle"></i>
+            </span>
+          </div>
+        </nav>
+        <!-- end navbar -->
+
+        <!-- main content -->
+        <div class="" id="gradient"></div>
+
+        <main class="p-3" id="main-section">
+          <div class="container-fluid position-relative" id="hero">
+            <div class="mb-3 pt-5">
+              <h1 class="fs-2 fw-bold">Sistem informasi managemen karyawan</h1>
+              <h2 class="fs-4 fw-light pt-3">Admin dashboard</h2>
+            </div>
+          </div>
+
+          <!-- card menu -->
+          <div class="container-fluid pt-5">
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-3">
+                <!-- card -->
+                <div class="card mb-3 p-1">
+                  <div class="row g-0">
+                    <div
+                      class="col-md-4 d-flex align-items-center justify-content-center bg-primary rounded"
+                    >
+                      <i class="bi bi-people-fill fs-1 text-light"></i>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Data pegawai</h5>
+                        <p class="card-text"></p>
+                        <p class="card-text"><span class="fs-4">13</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <!-- card -->
+                <div class="card mb-3 p-1">
+                  <div class="row g-0">
+                    <div
+                      class="col-md-4 d-flex align-items-center justify-content-center bg-success rounded"
+                    >
+                      <i class="bi bi-calendar2-check-fill fs-1 text-light"></i>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Absensi</h5>
+                        <span class="card-title"
+                          ><small class="text-muted"
+                            >1 november 2024</small
+                          ></span
+                        >
+                        <p class="card-text"><span class="fs-4">13</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <!-- card -->
+                <div class="card mb-3 p-1">
+                  <div class="row g-0">
+                    <div
+                      class="col-md-4 d-flex align-items-center justify-content-center bg-info rounded"
+                    >
+                      <i class="bi bi-clipboard-check fs-1 text-light"></i>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Izin</h5>
+                        <span class="card-text"
+                          ><small class="text-muted"
+                            >Menunggu dikonfirmasi</small
+                          ></span
+                        >
+                        <p class="card-text"><span class="fs-4">13</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <!-- card -->
+                <div class="card mb-3 p-1">
+                  <div class="row g-0">
+                    <div
+                      class="col-md-4 d-flex align-items-center justify-content-center bg-warning rounded"
+                    >
+                      <i class="bi bi-person-workspace fs-1 text-light"></i>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body text-center">
+                        <h5 class="card-title">Lembur</h5>
+                        <span class="card-title"
+                          ><small class="text-muted"
+                            >Menunggu konfirmasi</small
+                          ></span
+                        >
+                        <p class="card-text"><span class="fs-4">13</span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- Modal data karyaan -->
+    <div
+      class="modal fade"
+      id="modal-data-karyawan"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+      data-bs-backdrop="static"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 fw-bold" id="exampleModalLabel">
+              Tambah data karyawan
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!-- form input  -->
+            <form action="">
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  placeholder="name@example.com"
+                />
+                <label for="floatingInput">Nama lengkap</label>
+              </div>
+              <div class="mb-3">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Pilih jenis kelamin</option>
+                  <option value="perempuan">perempuan</option>
+                  <option value="laki-laki">laki-laki</option>
+                </select>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floating-email-modal"
+                  placeholder="name@example.com"
+                />
+                <label for="floating-email-modal">Alamat email</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floating-noHP-modal"
+                  placeholder="name@example.com"
+                />
+                <label for="floating-noHP-modal">Nomor hape</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <textarea
+                  class="form-control"
+                  placeholder="Leave a comment here"
+                  id="floatingTextarea2"
+                  style="height: 100px"
+                ></textarea>
+                <label for="floatingTextarea2">Alamat</label>
+              </div>
+
+              <div class="form-floating mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="floatingPassword"
+                  placeholder="Password"
+                />
+                <label for="floatingPassword">Password</label>
+              </div>
+
+              <div class="mb-3">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Pilih divisi</option>
+                  <option value="perempuan">perempuan</option>
+                  <option value="laki-laki">laki-laki</option>
+                </select>
+              </div>
+
+              <div class="">
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Pilih Jabatan</option>
+                  <option value="perempuan">perempuan</option>
+                  <option value="laki-laki">laki-laki</option>
+                </select>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-success">Tambah data</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script type="module" src="./js/DOM.js"></script>
+</html>
